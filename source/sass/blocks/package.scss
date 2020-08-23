@@ -1,0 +1,32 @@
+.package__header {
+  margin: 0;
+}
+
+.package__label {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27273px;
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.package__price {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: right;
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.package__include {
+  margin: 0;
+  line-height: 24px;
+  color: #2c2e3f;
+}
+
+.package__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 32px;
+  color: #2c2e3f;
+}

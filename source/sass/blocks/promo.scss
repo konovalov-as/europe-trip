@@ -1,0 +1,24 @@
+.promo {
+  background-color: #497794;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/bg-promo.jpg");
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.10667px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.promo_description {
+  margin: 0;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+  color: white;
+}

@@ -1,28 +1,28 @@
 'use strict';
 (function () {
   function showTab(evt) {
-    document.querySelector('.tab--show').classList.remove('tab--show');
-    document.querySelector('.tab--active').classList.remove('tab--active');
+    document.querySelector('.js-tab--show').classList.remove('js-tab--show');
+    document.querySelector('.js-tab--active').classList.remove('js-tab--active');
 
     var evtButton = evt.target;
-    evtButton.classList.add('tab--active');
+    evtButton.classList.add('js-tab--active');
     var buttonClass = evt.target.classList[1];
     var content = document.querySelectorAll('.' + buttonClass)[1];
-    content.classList.add('tab--show');
+    content.classList.add('js-tab--show');
   }
 
-  function defaultHide() {
-    var a = document.querySelectorAll('.content');
-    a.forEach(function addClass(info) {
-      info.classList.add('js-default-hide');
+  function hideTabs() {
+    var tabs = document.querySelectorAll('.js-content');
+    tabs.forEach(function (tab) {
+      tab.classList.add('js-tab--hide');
     });
   }
 
-  var tabButton = document.querySelectorAll('button.tab');
+  var tabButton = document.querySelectorAll('button.js-tab');
   tabButton.forEach(function (button) {
     button.addEventListener('click', showTab);
   });
 
-  window.addEventListener('load', defaultHide);
+  window.addEventListener('load', hideTabs);
 
 })();

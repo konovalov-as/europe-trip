@@ -48,7 +48,7 @@
         В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
         природы.
       </p>
-      <a href="#" class="promo__link">смотреть тур</a>
+      <a href="#" class="button promo__link">смотреть тур</a>
     </section>
 
     <div class="container">
@@ -96,14 +96,14 @@
 
     <div class="container">
       <div class="tab-controls">
-        <button class="tab tab--1 tab--active">Греция</button>
-        <button class="tab tab--2">Албания</button>
-        <button class="tab tab--3">Македония</button>
-        <button class="tab tab--4">Черногория</button>
-        <button class="tab tab--5">Хорватия</button>
+        <button class="js-tab js-tab--1 js-tab--active tab-controls__item">Греция</button>
+        <button class="js-tab js-tab--2 tab-controls__item">Албания</button>
+        <button class="js-tab js-tab--3 tab-controls__item">Македония</button>
+        <button class="js-tab js-tab--4 tab-controls__item">Черногория</button>
+        <button class="js-tab js-tab--5 tab-controls__item">Хорватия</button>
       </div>
 
-      <section class="country content tab tab--1 tab--show">
+      <section class="country js-content js-tab js-tab--1 js-tab--show">
         <div class="country__wrapper">
           <div class="country__inner">
             <h2 class="title-h2">Греция</h2>
@@ -114,7 +114,7 @@
               600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
             </p>
             <div class="country__link-block">
-              <a href="" class="country__link">купить тур сейчас</a>
+              <a href="" class="button country__link">купить тур сейчас</a>
             </div>
           </div>
           <div class="country__image-block">
@@ -136,7 +136,7 @@
         </div>
       </section>
 
-      <section class="country content tab tab--2">
+      <section class="country js-content js-tab js-tab--2">
         <div class="country__wrapper">
           <div class="country__inner">
             <h2 class="title-h2">Албания</h2>
@@ -147,7 +147,7 @@
               состояния.
             </p>
             <div class="country__link-block">
-              <a href="" class="country__link">купить тур сейчас</a>
+              <a href="" class="button country__link">купить тур сейчас</a>
             </div>
           </div>
           <div class="country__image-block">
@@ -169,7 +169,7 @@
         </div>
       </section>
 
-      <section class="country content tab tab--3">
+      <section class="country js-content js-tab js-tab--3">
         <div class="country__wrapper">
           <div class="country__inner">
             <h2 class="title-h2">Македония</h2>
@@ -179,7 +179,7 @@
               где находится археологический памятник Кокино в длину около 100 метров.
             </p>
             <div class="country__link-block">
-              <a href="" class="country__link">купить тур сейчас</a>
+              <a href="" class="button country__link">купить тур сейчас</a>
             </div>
           </div>
           <div class="country__image-block">
@@ -201,7 +201,7 @@
         </div>
       </section>
 
-      <section class="country content tab tab--4">
+      <section class="country js-content js-tab js-tab--4">
         <div class="country__wrapper">
           <div class="country__inner">
             <h2 class="title-h2">Черногория</h2>
@@ -210,7 +210,7 @@
               берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
             </p>
             <div class="country__link-block">
-              <a href="" class="country__link">купить тур сейчас</a>
+              <a href="" class="button country__link">купить тур сейчас</a>
             </div>
           </div>
           <div class="country__image-block">
@@ -231,7 +231,7 @@
         </div>
       </section>
 
-      <section class="country content tab tab--5">
+      <section class="country js-content js-tab js-tab--5">
         <div class="country__wrapper">
           <div class="country__inner">
             <h2 class="title-h2">Хорватия</h2>
@@ -241,7 +241,7 @@
               сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
             </p>
             <div class="country__link-block">
-              <a href="" class="country__link">купить тур сейчас</a>
+              <a href="" class="button country__link">купить тур сейчас</a>
             </div>
           </div>
           <div class="country__image-block">
@@ -266,12 +266,12 @@
 
     <div class="container">
       <section class="price">
-        <div class="price__description">
+        <div class="price__block">
           <h2 class="title-h2">Цены</h2>
-          <p>Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
+          <p class="price__description">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
             возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
-          <p>Свяжитесь с нами</p>
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <p class="price__contact-us">Свяжитесь с нами</p>
+          <a href="tel:+749978468446" class="price__phone">+7 (499) -784-684-46</a>
         </div>
         <div class="price__wrapper">
           <ul class="price__list">
@@ -321,13 +321,13 @@
           <p class="form__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <label class="form__label">
             <span class="visually-hidden">Номер телефона</span>
-            <input class="form__input" type="number" name="phone" placeholder="+7 Введите 10 цифр номера">
+            <input class="form__input no-arrow" type="number" name="phone" placeholder="+7 Введите 10 цифр номера">
           </label>
-          <label>
+          <label class="form__label">
             <span class="visually-hidden">E-mail</span>
             <input class="form__input" type="email" name="email" placeholder="E-mail">
           </label>
-          <button class="button" type="submit">отправить</button>
+          <button class="button button--submit" type="submit">отправить</button>
         </form>
       </section>
     </div>
@@ -345,43 +345,45 @@
                 <a href="" class="city__link">Марсель</a>
               </li>
               <li class="city__item">
-                <a href="" class="city__link">Сардиния</a>
-              </li>
-              <li class="city__item">
-                <a href="" class="city__link">Корс</a>
-              </li>
-              <li class="city__item">
                 <a href="" class="city__link">Ним</a>
-              </li>
-              <li class="city__item">
-                <a href="" class="city__link">Палермо</a>
-              </li>
-              <li class="city__item">
-                <a href="" class="city__link">Ницца</a>
               </li>
               <li class="city__item">
                 <a href="" class="city__link">Монпелье</a>
               </li>
               <li class="city__item">
-                <a href="" class="city__link">Катания</a>
-              </li>
-              <li class="city__item">
-                <a href="" class="city__link">Монако/a>
-              </li>
-              <li class="city__item">
                 <a href="" class="city__link">Барселона</a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Пальма</a>
+              </li>
+
+              <li class="city__item">
+                <a href="" class="city__link">Сардиния</a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Палермо</a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Катания</a>
               </li>
               <li class="city__item">
                 <a href="" class="city__link">Неаполь</a>
               </li>
               <li class="city__item">
-                <a href="" class="city__link">Динь-ле-Бен</a>
-              </li>
-              <li class="city__item">
-                <a href="" class="city__link">Пальма</a>
-              </li>
-              <li class="city__item">
                 <a href="" class="city__link">Рим</a>
+              </li>
+
+              <li class="city__item">
+                <a href="" class="city__link">Корс</a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Ницца</a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Монако/a>
+              </li>
+              <li class="city__item">
+                <a href="" class="city__link">Динь-ле-Бен</a>
               </li>
               <li class="city__item">
                 <a href="" class="city__link">Гренобль</a>
@@ -394,8 +396,8 @@
           <div class="contacts__wrapper">
             <p class="contacts__title">Наши контакты</p>
             <div class="contacts__block">
-              <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-              <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+              <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__email">puteshestviemechta@gmail.ru</a>
+              <a href="tel:+749978468446" class="contacts__phone">+7 (499) -784-684-46</a>
             </div>
           </div>
         </div>
