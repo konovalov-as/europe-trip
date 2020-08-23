@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+.places-visit__item {
+  position: relative;
+}
+
 .places-visit__link {
   text-decoration: none;
   color: #2c2e3f;
@@ -21,4 +25,37 @@
 
 .places-visit__label {
   padding: 15px 30px;
+}
+
+.places-visit__action {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 21, 23, 0.6);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.places-visit__action:hover,
+.places-visit__link:focus ~ .places-visit__action {
+  opacity: 1;
+}
+
+.places-visit__detail {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
