@@ -23,6 +23,15 @@
   line-height: 17px;
   text-decoration-line: underline;
   color: #fe7865;
+
+  &:hover,
+  &:focus {
+    color: #f17d4b;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .contacts__email {

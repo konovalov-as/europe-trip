@@ -50,6 +50,8 @@
 }
 
 .places-visit__label {
+  max-width: 243px;
+  width: 100%;
   padding: 15px 30px;
   position: absolute;
   background-color: white;
@@ -88,6 +90,15 @@
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 10px 30px;
+  padding: 30px 25px;
   border: 1px solid rgba(255, 255, 255, 0.7);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }

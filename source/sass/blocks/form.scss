@@ -43,6 +43,15 @@
   color: #141517;
   padding: 15px;
   border: 1px solid rgba(44, 46, 63, 0.3);
+
+  &:hover,
+  &:focus {
+    border-color: #2c2e3f;
+  }
+
+  &:active {
+    border-color: #141517;
+  }
 }
 
 .form__input--phone {

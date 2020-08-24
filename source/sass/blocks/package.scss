@@ -1,6 +1,11 @@
 .package {
   border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    border-color: #fe7865;
+  }
 }
 
 .package__wrapper {

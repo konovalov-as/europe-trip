@@ -8,6 +8,15 @@
   line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #f17d4b;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .button--submit {
