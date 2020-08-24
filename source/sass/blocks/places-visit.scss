@@ -42,6 +42,11 @@
   line-height: 29px;
   text-align: center;
   letter-spacing: -0.415px;
+
+  &:hover .places-visit__action,
+  &:focus .places-visit__action {
+    opacity: 1;
+  }
 }
 
 .places-visit__image {
@@ -76,13 +81,7 @@
   transition: opacity 0.3s ease;
 }
 
-.places-visit__action:hover,
-.places-visit__link:focus ~ .places-visit__action {
-  opacity: 1;
-}
-
 .places-visit__detail {
-  text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 14px;
@@ -93,12 +92,7 @@
   padding: 30px 25px;
   border: 1px solid rgba(255, 255, 255, 0.7);
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: underline;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.5);
   }
 }

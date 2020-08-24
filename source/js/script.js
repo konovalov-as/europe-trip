@@ -1,9 +1,14 @@
 'use strict';
+
 (function () {
-  function showTab(evt) {
+  // switch tabs
+  function hideCurrentTab() {
     document.querySelector('.js-tab--show').classList.remove('js-tab--show');
     document.querySelector('.js-tab--active').classList.remove('js-tab--active');
+  }
 
+  function showTab(evt) {
+    hideCurrentTab();
     var evtButton = evt.target;
     evtButton.classList.add('js-tab--active');
     var buttonClass = evt.target.classList[1];
@@ -24,5 +29,19 @@
   });
 
   window.addEventListener('load', hideTabs);
+
+  // go to tab
+  var cards = document.querySelectorAll('.places-visit__link');
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (evt) {
+      hideCurrentTab();
+      var tabTargetId = evt.target.closest('.places-visit__link').attributes.href.value.slice(1);
+      var targetButton = document.querySelector('.' + tabTargetId);
+      targetButton.classList.add('js-tab--active');
+      var tatTarget = document.querySelector('#' + tabTargetId);
+      tatTarget.classList.add('js-tab--show');
+    });
+  });
+
 
 })();
