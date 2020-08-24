@@ -1,0 +1,11 @@
+.index-footer__wrapper {
+  display: flex;
+  margin-bottom: 75px;
+}
+
+.index-footer__left,
+.index-footer__center,
+.index-footer__right {
+  max-width: 390px;
+  width: 100%;
+}

@@ -1,5 +1,22 @@
+.package {
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+}
+
+.package__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  min-height: 672px;
+  padding: 30px;
+  padding-top: 40px;
+}
+
 .package__header {
   margin: 0;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .package__label {
@@ -19,8 +36,11 @@
 
 .package__include {
   margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 28px;
   line-height: 24px;
   color: #2c2e3f;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 }
 
 .package__list {
@@ -29,4 +49,32 @@
   list-style: none;
   line-height: 32px;
   color: #2c2e3f;
+}
+
+.package__item {
+  display: flex;
+  margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/check-complex.png");
+    margin-top: 10px;
+    margin-right: 16px;
+  }
+}
+
+.package__item--economical {
+  &::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/check-economical.png");
+  }
+}
+
+.package__buy {
+  margin-top: auto;
 }

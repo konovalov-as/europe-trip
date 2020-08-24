@@ -4,13 +4,16 @@
 @import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "blocks/container";
+
+// header
+@import "blocks/main-nav.scss";
+@import "blocks/main-menu-toggle.scss";
 
 // blocks styles
 @import "blocks/body.scss";
-@import "blocks/main-menu-toggle.scss";
 @import "blocks/button.scss";
 @import "blocks/title-h2";
-@import "blocks/main-nav.scss";
 @import "blocks/promo";
 
 // places visit styles
@@ -34,3 +37,4 @@
 @import "blocks/city.scss";
 @import "blocks/contacts.scss";
 @import "blocks/corporate-travel.scss";
+@import "blocks/index-footer.scss";

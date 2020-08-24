@@ -1,7 +1,28 @@
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.main-nav__logo-block {
+  width: 58px;
+  height: 22px;
+  margin-right: 20px;
+}
+
 .main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 500px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 40px;
 }
 
 .main-nav__link {

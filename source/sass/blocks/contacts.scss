@@ -1,9 +1,20 @@
+.contacts__wrapper {
+  padding-left: 90px;
+  padding-right: 30px;
+}
+
 .contacts__title {
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   color: #141517;
+}
+
+.contacts__block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__email,
@@ -12,4 +23,8 @@
   line-height: 17px;
   text-decoration-line: underline;
   color: #fe7865;
+}
+
+.contacts__email {
+  margin-bottom: 20px;
 }

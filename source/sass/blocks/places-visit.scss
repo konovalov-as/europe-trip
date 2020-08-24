@@ -1,5 +1,16 @@
+.places-visit {
+  margin-top: 199px;
+}
+
+.places-visit__title {
+  max-width: 360px;
+  margin-bottom: 64px;
+}
+
 .places-visit__description {
+  max-width: 330px;
   margin: 0;
+  margin-bottom: 56px;
   line-height: 28px;
   letter-spacing: -0.466667px;
 }
@@ -8,13 +19,23 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .places-visit__item {
   position: relative;
+  margin-bottom: 101px;
+  margin-right: 60px;
+}
+
+.places-visit__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .places-visit__link {
+  display: flex;
   text-decoration: none;
   color: #2c2e3f;
   font-size: 24px;
@@ -23,8 +44,19 @@
   letter-spacing: -0.415px;
 }
 
+.places-visit__image {
+  width: 350px;
+  height: 430px;
+}
+
 .places-visit__label {
   padding: 15px 30px;
+  position: absolute;
+  background-color: white;
+  z-index: 20;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .places-visit__action {

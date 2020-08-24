@@ -1,13 +1,21 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: #497794;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   background-image: url("../img/bg-promo.jpg");
+  width: 1920px;
+  min-height: 860px;
 }
 
 .promo__title {
   margin: 0;
+  margin-top: 185px;
+  margin-bottom: 30px;
+  margin-right: 433px;
+  max-width: 412px;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
@@ -16,9 +24,18 @@
   color: white;
 }
 
-.promo_description {
+.promo__description {
   margin: 0;
+  margin-bottom: 39px;
+  margin-right: 469px;
+  max-width: 376px;
   line-height: 27px;
   letter-spacing: -0.466667px;
   color: white;
+}
+
+.promo__link {
+  max-width: 340px;
+  width: 100%;
+  margin-right: 505px;
 }

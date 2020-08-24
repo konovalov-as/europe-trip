@@ -1,7 +1,15 @@
 .callback-block {
-  background-color: #ff9481;
-  background-position: center;
+  display: flex;
+  background: linear-gradient(to right, #ff9481 844px, white 844px);
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 844px;
   background-image: url("../img/bg-form.jpg");
+  min-height: 455px;
+  margin-bottom: 170px;
+}
+
+.callback-block__form {
+  margin-left: auto;
+  align-self: center;
 }

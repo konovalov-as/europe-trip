@@ -1,5 +1,15 @@
+.form {
+  max-width: 656px;
+  width: 100%;
+  background: white;
+  padding: 50px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+  border-radius: 5px;
+}
+
 .form__title {
   margin: 0;
+  margin-bottom: 15px;
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
@@ -9,13 +19,32 @@
 
 .form__description {
   margin: 0;
+  margin-bottom: 24px;
   line-height: 24px;
   text-align: center;
   color: #141517;
 }
 
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form__label {
+  max-width: 269px;
+  width: 100%;
+}
+
 .form__input {
+  width: 100%;
   font-size: 14px;
   line-height: 17px;
   color: #141517;
+  padding: 15px;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.form__input--phone {
+  padding-left: 25px;
 }

@@ -1,10 +1,21 @@
+.price {
+  display: flex;
+  margin-bottom: 138px;
+}
+
+.price__title {
+  margin-bottom: 53px;
+}
+
 .price__description {
   margin: 0;
+  margin-bottom: 60px;
   line-height: 27px;
 }
 
 .price__contact-us {
   margin: 0;
+  margin-bottom: 13px;
   font-weight: 500;
   font-size: 22px;
   line-height: 34px;
@@ -18,8 +29,22 @@
   color: black;
 }
 
+.price__wrapper {
+  margin-bottom: 40px;
+  order: -1;
+}
+
 .price__list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  display: flex;
+}
+
+.price__item {
+  margin-right: 30px;
+}
+
+.price__item:last-child {
+  margin-right: 111px;
 }

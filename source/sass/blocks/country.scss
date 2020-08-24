@@ -1,5 +1,38 @@
+.country {
+  position: relative;
+}
+
+.country__wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-country.png");
+  display: flex;
+  min-height: 1090px;
+}
+
+.country__inner {
+  max-width: 425px;
+  width: 100%;
+  margin-right: 45px;
+}
+
+.country__title {
+  margin-bottom: 52px;
+}
+
 .country__description {
+  max-width: 370px;
   margin: 0;
+  margin-bottom: 50px;
   line-height: 28px;
   letter-spacing: -0.466667px;
+}
+
+.country__image {
+  width: 430px;
+  height: 596px;
+}
+
+.country__link-block {
+  display: flex;
 }
