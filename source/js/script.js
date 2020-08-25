@@ -43,5 +43,41 @@
     });
   });
 
+  // modal window
+  var modalOpenButtons = document.querySelectorAll('.country__link');
+  var modal = document.querySelector('.modal');
+  modalOpenButtons.forEach(function (button) {
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modal.classList.add('modal--show');
+    });
+  });
+
+  var modalCloseButton = modal.querySelector('.modal__close');
+  modalCloseButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove('modal--show');
+  });
+
+  document.addEventListener('keydown', function (evt) {
+    if (evt.key !== 'Escape') {
+      return;
+    }
+    modal.classList.remove('modal--show');
+  });
+
+  modal.addEventListener('click', function (evt) {
+    if (evt.target.classList[0] !== 'modal') {
+      return;
+    }
+    modal.classList.remove('modal--show');
+  });
+
+  var modalForm = modal.querySelector('.modal__form');
+  modalForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    // console.log('Форма успешно отправлена');
+  });
+
 
 })();
