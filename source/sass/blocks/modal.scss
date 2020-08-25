@@ -23,14 +23,21 @@
 
 .modal__content {
   max-width: 728px;
+  width: 100%;
+  min-height: 444px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fbf8f8;
 }
 
 .modal__form {
   display: flex;
+}
+
+.modal__form--hidden {
+  visibility: hidden;
 }
 
 .modal__image {
@@ -75,8 +82,9 @@
   color: #fe7865;
 }
 
-.modal__input-error--hidden {
-  display: none;
+.modal__input-error--hidden-phone,
+.modal__input-error--hidden-email {
+  visibility: hidden;
 }
 
 .modal__order-input {
@@ -117,4 +125,27 @@
   cursor: pointer;
   opacity: 0.5;
   border: 0;
+}
+
+.modal__success--hidden {
+  visibility: hidden;
+}
+
+.modal__success {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal__success-message {
+  max-width: 399px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: #48494d;
 }

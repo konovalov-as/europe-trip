@@ -352,11 +352,15 @@
             <div class="form__row">
               <label class="form__label">
                 <span class="visually-hidden">Номер телефона</span>
+                <span class="form__input-error form__input-error--hidden-phone form__input-error--phone">Данные не
+                  верны</span>
                 <input class="form__input form__input--phone no-arrow" type="number" name="phone"
                   placeholder="+7 Введите 10 цифр номера">
               </label>
               <label class="form__label">
                 <span class="visually-hidden">E-mail</span>
+                <span class="form__input-error form__input-error--hidden-email form__input-error--email">Данные не
+                  верны</span>
                 <input class="form__input" type="email" name="email" placeholder="E-mail">
               </label>
             </div>
@@ -462,20 +466,37 @@
           <div class="modal__inner">
             <label class="modal__form-label">
               <span class="visually-hidden">Номер телефона</span>
-              <span class="modal__input-error modal__input-error--hidden">Данные не верны</span>
+              <span class="modal__input-error modal__input-error--hidden-phone modal__input-error--phone">Данные не
+                верны</span>
               <input class="modal__order-input no-arrow" type="number" name="modal-phone"
                 placeholder="+7 Введите 10 цифр номера">
             </label>
             <label class="modal__form-label">
               <span class="visually-hidden">Email</span>
-              <span class="modal__input-error modal__input-error--hidden">Данные не верны</span>
+              <span class="modal__input-error modal__input-error--hidden-email modal__input-error--email">Данные не
+                верны</span>
               <input class="modal__order-input" type="email" name="modal-email" placeholder="">
             </label>
           </div>
           <button class="submit button button--modal-form" type="submit">Отправить</button>
         </div>
       </form>
+      <div class="modal__success modal__success--hidden">
+        <p class="modal__success-message">Форма успешно отправлена, спасибо! :)</p>
+      </div>
       <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="modal modal--success">
+    <h2 class="visually-hidden">Форма успешно отправлена</h2>
+    <div class="modal__content">
+      <div class="modal__success">
+        <p class="modal__success-message">Форма успешно отправлена, спасибо! :)</p>
+      </div>
+      <button class="modal__close modal__close--success" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </div>

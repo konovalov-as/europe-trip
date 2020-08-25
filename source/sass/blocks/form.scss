@@ -57,3 +57,14 @@
 .form__input--phone {
   padding-left: 25px;
 }
+
+.form__input-error {
+  font-size: 12px;
+  line-height: 15px;
+  color: #fe7865;
+}
+
+.form__input-error--hidden-phone,
+.form__input-error--hidden-email {
+  visibility: hidden;
+}
