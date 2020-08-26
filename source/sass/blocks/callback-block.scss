@@ -7,6 +7,11 @@
   background-image: url("../img/bg-form.jpg");
   min-height: 455px;
   margin-bottom: 170px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-form@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .callback-block__form {
@@ -19,6 +24,11 @@
   .callback-block {
     background-size: auto;
     margin-bottom: 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-form-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .callback-block__form {

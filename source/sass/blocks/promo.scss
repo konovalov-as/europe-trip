@@ -9,6 +9,11 @@
   background-image: url("../img/bg-promo.jpg");
   width: $max-desktop-width;
   min-height: 860px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-promo@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promo__title {
@@ -47,6 +52,11 @@
     width: $tablet-width;
     min-height: 344px;
     background-image: url("../img/bg-promo-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-promo-tablet2@x.jpg");
+      background-size: cover;
+    }
   }
 
   .promo__title {
@@ -79,6 +89,11 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url("../img/bg-promo-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-promo-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promo__title {
