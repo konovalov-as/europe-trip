@@ -78,6 +78,7 @@
   .price__contact-us {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .price__phone {
@@ -86,6 +87,7 @@
     margin-bottom: 30px;
     color: #fe7865;
     text-decoration: underline;
+    font-size: 18px;
 
     &:hover,
     &:focus {
@@ -108,5 +110,19 @@
 
   .price__item:last-child {
     margin-right: 50px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .price {
+    margin-bottom: 30px;
+  }
+
+  .price__list {
+    flex-wrap: wrap;
+  }
+
+  .price__item {
+    margin-bottom: 30px;
   }
 }

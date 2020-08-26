@@ -2,7 +2,7 @@
   position: absolute;
   top: 100px;
   right: 0;
-  max-width: 382px;
+  width: 382px;
   background-color: white;
   padding: 30px;
 }
@@ -41,6 +41,11 @@
   letter-spacing: -0.408333px;
 }
 
+.reviews__author {
+  display: flex;
+  align-items: center;
+}
+
 .reviews__author-name {
   font-weight: 500;
   line-height: 24px;
@@ -50,9 +55,42 @@
 
 @media (max-width: $tablet-width-only) {
   .reviews {
-    bottom: 0;
+    bottom: -25px;
     left: 50%;
     top: auto;
     transform: translate(-50%);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .reviews {
+    bottom: -60px;
+  }
+
+  .reviews__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reviews__text {
+    margin-bottom: 20px;
+  }
+
+  .reviews__item {
+    text-align: center;
+  }
+
+  .reviews__author {
+    display: block;
+  }
+
+  .reviews__author-name {
+    display: block;
   }
 }

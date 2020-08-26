@@ -137,3 +137,18 @@
     height: 425px;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .places-visit__list {
+    max-width: $mobile-width;
+    margin: 0 auto;
+  }
+
+  .places-visit__item {
+    margin-right: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -8,3 +8,9 @@
     max-width: $tablet-width;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .container {
+    max-width: $mobile-width-only;
+  }
+}

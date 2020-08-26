@@ -21,8 +21,19 @@
 
 @media (max-width: $tablet-width-only) {
   .title-h2 {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
     &::after {
       content: none;
     }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .title-h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
 }

@@ -25,3 +25,11 @@
     margin: auto;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .callback-block {
+    background: none;
+    min-width: 10px;
+    display: block;
+  }
+}
