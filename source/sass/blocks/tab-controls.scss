@@ -32,3 +32,10 @@
 .tab-controls__item:last-child {
   margin-right: 0;
 }
+
+@media (max-width: $tablet-width-only) {
+  .tab-controls {
+    flex-wrap: nowrap;
+    margin-left: 37px;
+  }
+}

@@ -18,3 +18,14 @@
   line-height: 24px;
   color: rgba(20, 21, 23, 0.5);
 }
+
+
+@media (max-width: $tablet-width-only) {
+  .corporate-travel__title {
+    text-align: center;
+  }
+
+  .corporate-travel__description {
+    text-align: center;
+  }
+}

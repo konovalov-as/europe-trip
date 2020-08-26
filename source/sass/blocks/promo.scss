@@ -1,12 +1,13 @@
 .promo {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: flex-end;
   background-color: #497794;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/bg-promo.jpg");
-  width: 1920px;
+  width: $max-desktop-width;
   min-height: 860px;
 }
 
@@ -38,4 +39,29 @@
   max-width: 340px;
   width: 100%;
   margin-right: 505px;
+}
+
+
+@media (max-width: $tablet-width-only) {
+  .promo {
+    width: $tablet-width;
+    min-height: 344px;
+    background-image: url("../img/bg-promo-tablet.jpg");
+  }
+
+  .promo__title {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .promo__description {
+    max-width: 400px;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .promo__link {
+    margin: 0 auto;
+  }
 }

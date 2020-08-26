@@ -9,3 +9,26 @@
   max-width: 390px;
   width: 100%;
 }
+
+@media (max-width: $tablet-width-only) {
+  .index-footer__wrapper {
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+  }
+
+  .index-footer__left {
+    max-width: 380px;
+    margin-bottom: 60px;
+  }
+
+  .index-footer__center {
+    max-width: 340px;
+    margin-bottom: 60px;
+  }
+
+  .index-footer__right {
+    max-width: 100%;
+  }
+}

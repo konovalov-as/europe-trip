@@ -18,3 +18,11 @@
     background-color: #fe7865;
   }
 }
+
+@media (max-width: $tablet-width-only) {
+  .title-h2 {
+    &::after {
+      content: none;
+    }
+  }
+}

@@ -47,3 +47,12 @@
   letter-spacing: -0.466667px;
   color: #2c2e3f;
 }
+
+@media (max-width: $tablet-width-only) {
+  .reviews {
+    bottom: 0;
+    left: 50%;
+    top: auto;
+    transform: translate(-50%);
+  }
+}

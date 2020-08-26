@@ -25,6 +25,10 @@
   margin-right: 40px;
 }
 
+.main-nav__close {
+  display: none;
+}
+
 .main-nav__link {
   text-decoration: none;
   color: #141517;
@@ -57,5 +61,79 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-nav {
+    position: relative;
+  }
+
+  .main-nav__wrapper {
+    position: relative;
+    padding: 14px 0;
+  }
+
+  .main-nav__logo-block {
+    margin-left: 21px;
+  }
+
+  .main-nav__menu-wrapper--hidden {
+    display: none;
+  }
+
+  .main-nav__menu-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+    min-height: 568px;
+    background-color: white;
+  }
+
+  .main-nav__list {
+    margin-top: 134px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #fbf8f8;
+    padding: 16px;
+    padding-right: 35px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/icon-arrow-right.svg");
+    }
+  }
+
+  .main-nav__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    padding: 0;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-menu-close.svg");
+    width: 50px;
+    height: 52px;
+    cursor: pointer;
+  }
+
+  .main-nav__phone-block {
+    display: none;
   }
 }

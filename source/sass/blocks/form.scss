@@ -68,3 +68,9 @@
 .form__input-error--hidden-email {
   visibility: hidden;
 }
+
+@media (max-width: $tablet-width-only) {
+  .form__description {
+    margin-bottom: 5px;
+  }
+}

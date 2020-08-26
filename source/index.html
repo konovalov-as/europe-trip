@@ -16,6 +16,11 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z"
+                fill="white" />
+            </svg>
           </button>
           <div class="main-nav__wrapper">
             <div class="main-nav__logo-block">
@@ -23,14 +28,19 @@
                 <img src="img/logo.svg" alt="Логотип компании Way">
               </a>
             </div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#places-visit" class="main-nav__link">О путешествии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#price" class="main-nav__link">Цены</a>
-              </li>
-            </ul>
+            <div class="main-nav__menu-wrapper main-nav__menu-wrapper--hidden">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#places-visit" class="main-nav__link">О путешествии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#price" class="main-nav__link">Цены</a>
+                </li>
+              </ul>
+              <button class="main-nav__close">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </div>
             <div class="main-nav__phone-block">
               <a href="tel:+749978468446" class="main-nav__phone">+7 (499) -784-684-46</a>
             </div>
@@ -61,7 +71,10 @@
           <ul class="places-visit__list">
             <li class="places-visit__item">
               <a href="#greece" class="places-visit__link">
-                <img class="places-visit__image" src="img/Greece.jpg" alt="Греция" width="350" height="430">
+                <picture>
+                  <source media="(max-width: 1023px)" srcset="img/Greece-tablet.jpg 1x">
+                  <img class="places-visit__image" src="img/Greece.jpg" alt="Греция">
+                </picture>
                 <span class="places-visit__label">Греция</span>
                 <div class="places-visit__action">
                   <span class="places-visit__detail">Смотреть подробнее</span>
@@ -70,7 +83,10 @@
             </li>
             <li class="places-visit__item">
               <a href="#albania" class="places-visit__link">
-                <img class="places-visit__image" src="img/Albania.jpg" alt="Албания" width="350" height="430">
+                <picture>
+                  <source media="(max-width: 1023px)" srcset="img/Albania-tablet.jpg 1x">
+                  <img class="places-visit__image" src="img/Albania.jpg" alt="Албания">
+                </picture>
                 <span class="places-visit__label">Албания</span>
                 <div class="places-visit__action">
                   <span class="places-visit__detail">Смотреть подробнее</span>
@@ -79,7 +95,10 @@
             </li>
             <li class="places-visit__item">
               <a href="#macedonia" class="places-visit__link">
-                <img class="places-visit__image" src="img/Macedonia.jpg" alt="Македония" width="350" height="430">
+                <picture>
+                  <source media="(max-width: 1023px)" srcset="img/Macedonia-tablet.jpg 1x">
+                  <img class="places-visit__image" src="img/Macedonia.jpg" alt="Македония">
+                </picture>
                 <span class="places-visit__label">Македония</span>
                 <div class="places-visit__action">
                   <span class="places-visit__detail">Смотреть подробнее</span>
@@ -88,7 +107,10 @@
             </li>
             <li class="places-visit__item">
               <a href="#montenegro" class="places-visit__link">
-                <img class="places-visit__image" src="img/Montenegro.jpg" alt="Черногория" width="350" height="430">
+                <picture>
+                  <source media="(max-width: 1023px)" srcset="img/Montenegro-tablet.jpg 1x">
+                  <img class="places-visit__image" src="img/Montenegro.jpg" alt="Черногория">
+                </picture>
                 <span class="places-visit__label">Черногория</span>
                 <div class="places-visit__action">
                   <span class="places-visit__detail">Смотреть подробнее</span>
@@ -97,7 +119,10 @@
             </li>
             <li class="places-visit__item">
               <a href="#croatia" class="places-visit__link">
-                <img class="places-visit__image" src="img/Croatia.jpg" alt="Хорватия" width="350" height="430">
+                <picture>
+                  <source media="(max-width: 1023px)" srcset="img/Croatia-tablet.jpg 1x">
+                  <img class="places-visit__image" src="img/Croatia.jpg" alt="Хорватия">
+                </picture>
                 <span class="places-visit__label">Хорватия</span>
                 <div class="places-visit__action">
                   <span class="places-visit__detail">Смотреть подробнее</span>
@@ -136,7 +161,10 @@
               </div>
             </div>
             <div class="country__image-block">
-              <img class="country__image" src="img/Greece-tab.jpg" alt="Потрясающая Греция" width="430" height="596">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/Greece-tab-tablet.jpg 1x">
+                <img class="country__image" src="img/Greece-tab.jpg" alt="Потрясающая Греция">
+              </picture>
             </div>
           </div>
           <div class="reviews">
@@ -169,8 +197,10 @@
               </div>
             </div>
             <div class="country__image-block">
-              <img class="country__image" src="img/Albania-tab.jpg" alt="Замечательная Албания" width="430"
-                height="596">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/Albania-tab-tablet.jpg 1x">
+                <img class="country__image" src="img/Albania-tab.jpg" alt="Замечательная Албания">
+              </picture>
             </div>
           </div>
           <div class="reviews">
@@ -204,8 +234,10 @@
               </div>
             </div>
             <div class="country__image-block">
-              <img class="country__image" src="img/Macedonia-tab.jpg" alt="Удивительная Македония" width="430"
-                height="596">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/Macedonia-tab-tablet.jpg 1x">
+                <img class="country__image" src="img/Macedonia-tab.jpg" alt="Удивительная Македония">
+              </picture>
             </div>
           </div>
           <div class="reviews">
@@ -237,8 +269,10 @@
               </div>
             </div>
             <div class="country__image-block">
-              <img class="country__image" src="img/Montenegro-tab.jpg" alt="Прекрасная Черногория" width="430"
-                height="596">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/Montenegro-tab-tablet.jpg 1x">
+                <img class="country__image" src="img/Montenegro-tab.jpg" alt="Прекрасная Черногория">
+              </picture>
             </div>
           </div>
           <div class="reviews">
@@ -269,8 +303,10 @@
               </div>
             </div>
             <div class="country__image-block">
-              <img class="country__image" src="img/Croatia-tab.jpg" alt="Незабываемая Хорватия" width="430"
-                height="596">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/Croatia-tab-tablet.jpg 1x">
+                <img class="country__image" src="img/Croatia-tab.jpg" alt="Незабываемая Хорватия">
+              </picture>
             </div>
           </div>
           <div class="reviews">

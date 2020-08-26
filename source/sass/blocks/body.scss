@@ -1,5 +1,6 @@
 .body {
   min-width: $mobile-width;
+  max-width: $max-desktop-width;
   font-family: "Montserrat", "Roboto", sans-serif;
   color: $base-color;
   font-size: 16px;

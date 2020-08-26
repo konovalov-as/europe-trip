@@ -235,6 +235,21 @@
   formPhone.value = localStorage.getItem('formPhone');
   formEmail.value = localStorage.getItem('formEmail');
 
-  // -------------
+  // open and close main menu / tablet and mobile
+  var mainMenuToggle = document.querySelector('.main-menu-toggle');
+  var mainMenuList = document.querySelector('.main-nav__menu-wrapper');
+
+  mainMenuToggle.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    mainMenuList.classList.remove('main-nav__menu-wrapper--hidden');
+    mainMenuToggle.style.display = 'none';
+
+    var menuClosingButton = document.querySelector('.main-nav__close');
+    menuClosingButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      mainMenuList.classList.add('main-nav__menu-wrapper--hidden');
+      mainMenuToggle.style.display = 'block';
+    });
+  });
 
 })();

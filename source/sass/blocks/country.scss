@@ -36,3 +36,40 @@
 .country__link-block {
   display: flex;
 }
+
+@media (max-width: $tablet-width-only) {
+  .country-block {
+    margin-bottom: 112px;
+  }
+
+  .country__wrapper {
+    background-image: none;
+    display: block;
+    min-height: 10px;
+  }
+
+  .country__inner {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  .country__title {
+    text-align: center;
+  }
+
+  .country__description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .country__link {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .country__image {
+    width: 768px;
+    height: 415px;
+  }
+}
