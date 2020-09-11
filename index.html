@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Путешествие по Европе</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,8 +17,8 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="white"></path>
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite_auto.svg#icon-menu-open"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -70,6 +71,8 @@
             <li class="places-visit__item">
               <a href="#greece" class="places-visit__link">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/Greece-tablet.webp 1x, img/Greece-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Greece.webp 1x, img/Greece@2x.webp 2x">
                   <source media="(max-width: 1023px)" srcset="img/Greece-tablet.jpg 1x, img/Greece-tablet@2x.jpg 2x">
                   <img class="places-visit__image" src="img/Greece.jpg" srcset="img/Greece@2x.jpg 2x" alt="Греция">
                 </picture>
@@ -82,6 +85,8 @@
             <li class="places-visit__item">
               <a href="#albania" class="places-visit__link">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/Albania-tablet.webp 1x, img/Albania-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Albania.webp 1x, img/Albania@2x.webp 2x">
                   <source media="(max-width: 1023px)" srcset="img/Albania-tablet.jpg 1x, img/Albania-tablet@2x.jpg 2x">
                   <img class="places-visit__image" src="img/Albania.jpg" srcset="img/Albania@2x.jpg 2x" alt="Албания">
                 </picture>
@@ -94,6 +99,8 @@
             <li class="places-visit__item">
               <a href="#macedonia" class="places-visit__link">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/Macedonia-tablet.webp 1x, img/Macedonia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Macedonia.webp 1x, img/Macedonia@2x.webp 2x">
                   <source media="(max-width: 1023px)" srcset="img/Macedonia-tablet.jpg 1x, img/Macedonia-tablet@2x.jpg 2x">
                   <img class="places-visit__image" src="img/Macedonia.jpg" srcset="img/Macedonia@2x.jpg 2x" alt="Македония">
                 </picture>
@@ -106,6 +113,8 @@
             <li class="places-visit__item">
               <a href="#montenegro" class="places-visit__link">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/Montenegro-tablet.webp 1x, img/Montenegro-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Montenegro.webp 1x, img/Montenegro@2x.webp 2x">
                   <source media="(max-width: 1023px)" srcset="img/Montenegro-tablet.jpg 1x, img/Montenegro-tablet@2x.jpg 2x">
                   <img class="places-visit__image" src="img/Montenegro.jpg" srcset="img/Montenegro@2x.jpg 2x" alt="Черногория">
                 </picture>
@@ -118,6 +127,8 @@
             <li class="places-visit__item">
               <a href="#croatia" class="places-visit__link">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/Croatia-tablet.webp 1x, img/Croatia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Croatia.webp 1x, img/Croatia@2x.webp 2x">
                   <source media="(max-width: 1023px)" srcset="img/Croatia-tablet.jpg 1x, img/Croatia-tablet@2x.jpg 2x">
                   <img class="places-visit__image" src="img/Croatia.jpg" srcset="img/Montenegro@2x.jpg 2x" alt="Хорватия">
                 </picture>
@@ -160,6 +171,8 @@
             </div>
             <div class="country__image-block">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img//Greece-tab-tablet.webp 1x, img//Greece-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/Greece-tab.webp 1x, img/Greece-tab-tablet@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/Greece-tab-tablet.jpg 1x, img/Greece-tab-tablet@2x.jpg 2x">
                 <img class="country__image" src="img/Greece-tab.jpg" srcset="img/Greece-tab-tablet@2x.jpg 2x" alt="Потрясающая Греция">
               </picture>
@@ -196,6 +209,8 @@
             </div>
             <div class="country__image-block">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Albania-tab-tablet.webp 1x, img//Albania-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/Albania-tab.webp 1x, img/Albania-tab-tablet@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/Albania-tab-tablet.jpg 1x, img/Albania-tab-tablet@2x.jpg 2x">
                 <img class="country__image" src="img/Albania-tab.jpg" srcset="img/Albania-tab-tablet@2x.jpg 2x" alt="
                   Замечательная Албания">
@@ -234,6 +249,8 @@
             </div>
             <div class="country__image-block">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Macedonia-tab-tablet.webp 1x, img/Macedonia-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/Macedonia-tab.webp 1x, img/Macedonia-tab-tablet@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/Macedonia-tab-tablet.jpg 1x, img/Macedonia-tab-tablet@2x.jpg 2x">
                 <img class="country__image" src="img/Macedonia-tab.jpg" srcset="img/Macedonia-tab-tablet@2x.jpg 2x" alt=" Удивительная Македония">
               </picture>
@@ -269,6 +286,8 @@
             </div>
             <div class="country__image-block">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Montenegro-tab-tablet.webp 1x, img/Montenegro-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/Montenegro-tab.webp 1x, img/Montenegro-tab-tablet.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/Montenegro-tab-tablet.jpg 1x, img/Montenegro-tab-tablet@2x.jpg 2x">
                 <img class="country__image" src="img/Montenegro-tab.jpg" srcset="img/Montenegro-tab-tablet@2x.jpg 2x" alt=" Прекрасная Черногория">
               </picture>
@@ -303,6 +322,8 @@
             </div>
             <div class="country__image-block">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/Croatia-tab-tablet.webp 1x, img/Croatia-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/Croatia-tab.webp 1x, img/Croatia-tab-tablet.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/Croatia-tab-tablet.jpg 1x, img/Croatia-tab-tablet@2x.jpg 2x">
                 <img class="country__image" src="img/Croatia-tab.jpg" srcset="img/Croatia-tab-tablet@2x.jpg 2x" alt="Незабываемая Хорватия">
               </picture>
